@@ -42,7 +42,7 @@ export default function LoginPage() {
         await signInWithEmail(email, password);
       } else {
         await signUpWithEmail(email, password, name);
-        setSuccessMsg('Cadastro realizado com sucesso! Se o Supabase exigir confirmação por e-mail, verifique sua caixa de entrada antes de fazer login.');
+        setSuccessMsg('Cadastro realizado com sucesso! Verifique seu e-mail para confirmar sua conta.');
         // Clear registration fields and transition to signin
         setName('');
         setEmail('');
